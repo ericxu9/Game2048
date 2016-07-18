@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="com.xuyongjun.game2048.activity.OptionsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/options_setting"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_title"/>
+
+    <View
+        android:id="@+id/view_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_lines_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="列/行数"
+        android:layout_below="@id/view_line1"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_lines"
+        android:text="4"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_lines_num"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_button_selector"/>
+
+    <TextView
+        android:id="@+id/tv_goal_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目标分数"
+        android:layout_below="@id/btn_lines"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goal"
+        android:textStyle="bold"
+        android:text="2048"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_goal_num"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_button_selector"/>
+
+
+    <TextView
+        android:id="@+id/tv_contact_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:text="QQ:1576029838"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/view_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/tv_contact_me"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:id="@+id/btn_back"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_above="@id/view_line2"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_button_selector"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="确定"
+        android:id="@+id/btn_ok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_above="@id/view_line2"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_button_selector"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.GameActivity">
+
+    <!--顶部分数显示-->
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_goal"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/orange_shape"
+            android:textSize="40sp"
+            android:text="2048"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/gray_shape"
+                android:textSize="25sp"
+                android:text="@string/scroe"/>
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/orange_light_shape"
+                android:textSize="15sp"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:background="@drawable/gray_shape"
+                android:textSize="25sp"
+                android:text="@string/height_scroe"/>
+            <TextView
+                android:id="@+id/tv_height_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/orange_light_shape"
+                android:textSize="15sp"
+                android:text="0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--游戏界面-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:gravity="center"
+            android:id="@+id/game_root_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></RelativeLayout>
+    </FrameLayout>
+
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/btn_revert"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/blue_button_selector"
+            android:textColor="#ffffff"
+            android:text="@string/revert"/>
+        <Button
+            android:id="@+id/btn_restart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/blue_button_selector"
+            android:textColor="#ffffff"
+            android:text="@string/restart"/>
+        <Button
+            android:id="@+id/btn_options"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/blue_button_selector"
+            android:textColor="#ffffff"
+            android:text="@string/options"/>
+    </LinearLayout>
+</LinearLayout>

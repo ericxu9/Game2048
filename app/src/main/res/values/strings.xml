@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Game2048</string>
+    <string name="options_setting">选项设置</string>
+    <string name="scroe">分数</string>
+    <string name="height_scroe">最高记录</string>
+    <string name="revert">撤销</string>
+    <string name="options">选项</string>
+    <string name="restart">重置</string>
+</resources>
